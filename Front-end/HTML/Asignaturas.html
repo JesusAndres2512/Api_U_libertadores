@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudiantes</title>
+</head>
+<body>
+
+        <header>
+            <h1>Gestión de Asignaturas</h1>
+            <a href="index.html">Inicio</a>
+        </header>
+        <main>
+            <section>
+                <h2>Registrar Asignatura</h2>
+                <form id="formAsignatura">
+                    <input type="text" id="nombreAsignatura" placeholder="Nombre" required>
+                    <input type="text" id="codigo" placeholder="Código de Asignatura" required>
+                    <button type="submit">Guardar</button> <button type="submit">Eliminar</button>
+                </form>
+            </section>
+            <section>
+                <h2>Lista de Asignaturas</h2>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Codigo Asignatura</th>
+                            <th>Nombre Asignatura</th>
+                            <th>Profesor</th>
+                            <th>Dia de la Semana</th>
+                            <th>Hora</th>
+                        </tr>
+                    </thead>
+                    <tbody id="listaAsignaturas"></tbody>
+                </table>
+            </section>
+        </main>
+        <script src="/Front-end/Scripts/Asignaturas.js"></script>
+    </body>
+    </html>

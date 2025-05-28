@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudiantes</title>
+</head>
+<body>
+    <header>
+        <h1>Gestión de Profesores</h1>
+        <a href="index.html">Inicio</a>
+    </header>
+    <main>
+        <section>
+            <h2>Registrar Profesor</h2>
+            <form id="formProfesor">
+                <input type="text" id="nombreProfesor" placeholder="Nombre" required>
+                <input type="text" id="materia" placeholder="Materia" required>
+                <button type="submit">Guardar</button> <button type="submit">Eliminar</button>
+
+            </form>
+            
+          <h2>Registrar Notas</h2>
+          <form id="formNotas">
+            <input type="text" id="nota" placeholder="Nota" required>
+            <input type="text" id="estudiante" placeholder="codigo estudiante" required>
+            <input type="text" id="materia" placeholder="materia" required>
+            <button type="submit">Guardar</button> <button type="submit">Eliminar</button>
+        </form>
+        
+        <h2>Registrar horario</h2>
+
+        <form id="formHorario">
+            <input type="text" id="Semana" placeholder="Dia de la Semana" required>
+            <input type="text" id="Profesor" placeholder="Hora" required>
+            <input type="text" id="Materia" placeholder="Materia" required>
+            <input type="text" id="Profesor" placeholder="Codigo Profesor" required>
+            <button type="submit">Guardar</button> <button type="submit">Eliminar</button>
+        </form>
+        </section>
+        <section>
+            <h2>Lista de Profesores</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Materia</th>
+                        <th>Nota 1</th>
+                        <th>Nota 2</th>
+                        <th>Nota 3</th>
+                        <th>Horario</th>
+                    </tr>
+                </thead>
+                <tbody id="listaProfesores"></tbody>
+            </table>
+        </section>
+    </main>
+    <script src="/Front-end/Scripts/Profesores.js"></script>
+</body>
+</html>
