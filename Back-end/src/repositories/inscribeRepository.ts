@@ -1,4 +1,4 @@
-import { pool } from "../connectPg";
+import pool from "../db/connectPg";
 import { IInscribe, IInscribeRepository } from "../interfaces/inscribeRepository";
 
 export class InscribeRepository implements IInscribeRepository{

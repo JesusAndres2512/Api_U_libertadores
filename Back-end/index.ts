@@ -1,7 +1,7 @@
 import express from 'express'
 import cors from 'cors'
 import dotenv from 'dotenv';
-import "./src/connectPg";
+import "./src/db/connectPg";
 import router from "./src/routers/index"
 
 dotenv.config();

@@ -1,5 +1,5 @@
 import { QueryResult } from "pg";
-import { pool } from "../connectPg";
+import pool from "../db/connectPg";
 import { IImparte,IImparteRepository } from "../interfaces/imparteRepository";
 
 export class ImparteRepository implements IImparteRepository{

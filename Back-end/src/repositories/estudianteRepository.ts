@@ -1,5 +1,5 @@
 import { QueryResult } from "pg";
-import {pool} from "../connectPg"
+import pool from "../db/connectPg"
 import { IEstudiante, IEstudianteRepository } from "../interfaces/estudianteRepository";
 import {generateTimestampBasedId } from "../middleware/createIds";
 

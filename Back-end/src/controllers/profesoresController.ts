@@ -3,6 +3,8 @@ import { ProfesoresRepository } from "../repositories/profesorRepository"
 import { EstudianteService } from "../services/estudianteService"
 import { Request,Response } from "express"
 import { ProfesoresService } from "../services/profesorService"
+import pool from '../db/connectPg';
+
 
 const profesoresRepository: IProfesoresRepository = new ProfesoresRepository()
 const profesoreService: IProfesoresService = new ProfesoresService(profesoresRepository)

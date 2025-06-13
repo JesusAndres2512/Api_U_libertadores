@@ -2,6 +2,8 @@ import { IInscribeRepository, IInscribeService } from "../interfaces/inscribeRep
 import { InscribeRepository } from "../repositories/inscribeRepository"
 import { InscribeService } from "../services/inscribeService"
 import { Request,Response } from "express"
+import pool from '../db/connectPg';
+
 
 const inscribeRepository: IInscribeRepository = new InscribeRepository()
 const inscribeService: IInscribeService = new InscribeService(inscribeRepository)

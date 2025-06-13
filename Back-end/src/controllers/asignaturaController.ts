@@ -2,6 +2,8 @@ import { IAsignatura, IAsignaturaService, IAsignaturaRepository } from "../inter
 import { AsignaturaRepository } from "../repositories/asignaturaRepository"
 import { AsignaturaService } from "../services/asignaturaService"
 import { Request,Response } from "express"
+import pool from '../db/connectPg';
+
 
 const asignaturaRepository: IAsignaturaRepository = new AsignaturaRepository()
 const asignaturaService: IAsignaturaService = new AsignaturaService(asignaturaRepository)

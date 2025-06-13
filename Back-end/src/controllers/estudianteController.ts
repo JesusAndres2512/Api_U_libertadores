@@ -2,6 +2,8 @@ import { IEstudianteRepository, IEstudianteService } from "../interfaces/estudia
 import { EstudianteRepository } from "../repositories/estudianteRepository"
 import { EstudianteService } from "../services/estudianteService"
 import { Request,Response } from "express"
+import pool from '../db/connectPg';
+
 
 const estudianteRepository: IEstudianteRepository = new EstudianteRepository()
 const estudianteService: IEstudianteService = new EstudianteService(estudianteRepository)

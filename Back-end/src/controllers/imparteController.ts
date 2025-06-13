@@ -2,6 +2,8 @@ import { IImparteRepository, IImparteService } from "../interfaces/imparteReposi
 import { ImparteRepository } from "../repositories/imparteRepository"
 import { ImparteService } from "../services/imparteService"
 import { Request,Response } from "express"
+import pool from '../db/connectPg';
+
 
 const imparteRepository: IImparteRepository = new ImparteRepository()
 const imparteService: IImparteService = new ImparteService(imparteRepository)
